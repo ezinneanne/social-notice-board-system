@@ -1,0 +1,340 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Great+Vibes&family=Kiwi+Maru&family=Sacramento&family=Source+Sans+Pro&display=swap');
+
+
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: "Kiwi Maru",Sans-Serif;
+  background-color: #ede;
+  overflow-x: hidden;
+}
+
+*{
+  text-decoration: none;
+}
+
+/*nav-wrapper*/
+nav ul{
+  list-style: none;
+  border-top: 4px solid #eef;
+  background-color: #222;
+}
+
+nav ul li a{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px 20px;
+  color:#eee;
+}
+
+nav ul li a:hover,
+nav ul li a:focus{
+  color: #eef;
+  background-color: #555;
+}
+
+.logo-container{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  color: #222;
+  background-color: #eee;
+  font-style: italic;
+}
+
+.logo-title{
+  font-family: "Source Sans Pro", Sans-Serif;
+  
+}
+
+/*Responsiveness*/
+@media screen and (min-width:576px){
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  nav ul li {
+    flex: 1 0 auto;
+  }
+}
+
+/*banner*/
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.bannertext h1{
+  font-size: 6vw;
+  margin: 0;
+}
+
+.bannertext p{
+  margin: 3px;
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 24px;
+}
+
+.bannertext .banner-button{
+  width: 120px;
+  margin-top: 30px;
+  padding: 14px 20px;
+  background-color: #39f;
+  border-radius: 45px;
+  text-align: center;
+}
+
+.bannertext .banner-button a{
+  font-size: 1rem;
+  color: #fff;
+}
+
+.banner-img img{
+  width: 78vw;
+}
+
+/*Responsiveness*/
+@media screen and (min-width:576px){
+  .banner {
+    flex-direction: column-reverse;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .bannertext h1{
+    font-size: 6vw;
+    margin: 0;
+  }
+  
+  .bannertext p{
+    font-size: 10px;
+  }
+  
+  .bannertext .banner-button{
+    margin: 0 auto;
+  }
+  
+  .bannertext .banner-button a{
+    font-size: 0.9rem;
+  }
+  
+  .banner-img img{
+    width: 70vw;
+    margin-bottom: 20px;
+  }
+}
+
+/*news section*/
+
+#news-section{
+  box-shadow: 0 10px 22px rgba(0,0,0,0.09), 0 10px 10px rgba(0,0,0,0.09);
+}
+#news-section .upload-news-section textarea{
+  width: 85%;
+  margin-top: 35px;
+}
+.news{
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  font-family: "Source Sans Pro",Sans-Serif;
+}
+
+#news-section .upload-news-section button{
+  width: 120px;
+  padding: 14px 20px;
+  background-color: #39f;
+  border-radius: 45px;
+  text-align: center;
+}
+
+#news-section .upload-news-section p{
+  font-size: 1.1rem;
+  font-family: "Cabin",Sans-Serif;
+}
+
+#news-section .upload-news-section img{
+  width: 30vw;
+}
+
+/*Responsiveness*/
+@media screen and (min-width:576px){
+  
+  .news-heading{
+    display: flex;
+    justify-content: space-between;
+  }
+  #news-section .upload-news-section textarea{
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    
+ }
+
+  #news-section .upload-news-section img{
+    width: 27vw;
+  }
+
+}
+/*group button*/
+#group-button{
+  box-shadow: 0 10px 22px rgba(0,0,0,0.09), 0 10px 10px rgba(0,0,0,0.09);
+  
+}
+
+#group-button .group-btn button{
+  width: 19rem;
+  margin-left: 2rem;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 35px;
+  padding: 9px 15px;
+}
+
+#group-button .group-btn button a {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+}
+
+#group-button .group-btn img {
+  width: 30vw;
+}
+
+#group-button .group-btn p {
+  margin: 3px;
+  font-size: 14px;
+  opacity: 0.3;
+  line-height: 24px;
+  font-style: italic;
+}
+
+#group-button .group-btn form{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  font-size: 12px;
+}
+
+#group-button .group-btn form input {
+  background-color: #aaa;
+}
+#group-button .submit {
+  width: 120px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#group-button .submit a{
+  color: #aaa;
+}  
+
+/*Responsiveness*/
+
+@media screen and (min-width:576px){
+  #group-button .group-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  
+  #group-button .group-btn img{
+    width: 26vw;
+  }
+}
+
+/*complaints-query*/
+#complaints-query {
+  background: linear-gradient(rgba(0,5,0,0.5),rgba(3,0,5,0.5));
+}
+
+#complaints-query h1{
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 0.7;
+  font-style: italic;
+  color: #aaa;
+}
+
+#complaints-query .complaints button{
+  width: 6rem;
+  background-color: #fff;
+  border-radius: 35px;
+  padding: 1px 5px;
+  color: #aaa;
+}
+
+#complaints-query .query button{
+  width: 6rem;
+  background-color: #fff;
+  border-radius: 35px;
+  padding: 1px 5px;
+  color: #aaa;
+}
+#complaints-query .com-que{
+  width: 30vw;
+}
+
+/*post-info*/
+/*title*/
+#post-info .title{
+  margin: 40px 0;
+}
+
+#post-info .title-text{
+  text-align: center;
+  font-size: 40px;
+  color: #abc;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.post1,.post2,.post3,.post4,.post5,.post6{
+  background-color: #fff;
+}
+
+#post-info .img-container img{
+  width: 28vw;
+}
+
+#post-info a button{
+  width: 120px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border-radius: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+/*footer*/
+footer{
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  clear: both;
+}
+
+.footer-text{
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 10px;
+}
